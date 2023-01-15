@@ -156,7 +156,7 @@ body {
 }
 
 .card__name {
-  @apply mt-4 text-2xl mb-2
+  @apply mt-4 text-2xl mb-2;
 }
 
 .card__image {
@@ -165,7 +165,6 @@ body {
 }
 
 .draw-border {
-  box-shadow: inset 0 0 0 3px #3800df;
   color: white;
   -webkit-transition: color 0.25s 0.0833333333s;
   transition: color 0.25s 0.0833333333s;
