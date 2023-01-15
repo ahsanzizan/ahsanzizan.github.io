@@ -607,6 +607,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -669,10 +673,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .block {
@@ -1400,7 +1400,7 @@ body {
 
 .draw-border {
   box-shadow: inset 0 0 0 3px #3800df;
-  color: #58afd1;
+  color: white;
   transition: color 0.25s 0.0833333333s;
   position: relative;
 }
