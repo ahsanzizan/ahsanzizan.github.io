@@ -152,7 +152,7 @@ body {
 }
 
 .card {
-  @apply bg-slate-800 rounded-md flex flex-col items-center shadow-md text-white max-w-xl mx-auto;
+  @apply bg-slate-800 flex flex-col items-center shadow-md text-white max-w-xl mx-auto;
 }
 
 .card__name {
