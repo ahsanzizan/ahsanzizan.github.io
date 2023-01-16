@@ -152,7 +152,7 @@ body {
 }
 
 .card {
-  @apply bg-slate-800 rounded-md flex flex-col items-center shadow-md text-white max-w-lg mx-auto;
+  @apply bg-slate-800 rounded-md flex flex-col items-center shadow-md text-white max-w-xl mx-auto;
 }
 
 .card__name {
@@ -226,7 +226,7 @@ body {
   padding: 1em 2em;
   @apply px-7 py-4 mb-5 text-center hover:bg-sec;
   letter-spacing: 0.05rem;
-  width: 17rem;
+  width: 20rem;
 }
 
 
