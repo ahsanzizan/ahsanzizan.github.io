@@ -13,17 +13,17 @@ body {
 
 /* Direct descendant (Line 1) / first line */
 .hamburger-active > span:nth-child(1){
-    @apply rotate-45
+    @apply rotate-45;
 }
 
 /* Direct descendant (Line 3) / third line */
 .hamburger-active > span:nth-child(3){
-    @apply -rotate-45 
+    @apply -rotate-45;
 }
 
 /* Direct descendant (Line 2) / second line */
 .hamburger-active > span:nth-child(2){
-    @apply scale-0 
+    @apply scale-0;
 }
 
 /* Navbar */
@@ -152,7 +152,7 @@ body {
 }
 
 .card {
-  @apply bg-slate-800 flex flex-col items-center shadow-md text-white max-w-xl mx-auto;
+  @apply bg-slate-800 flex flex-col items-center shadow-md text-white max-w-xl mx-auto rounded-none;
 }
 
 .card__name {
