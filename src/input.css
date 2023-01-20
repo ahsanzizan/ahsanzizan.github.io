@@ -218,7 +218,7 @@ body {
 }
 
 .btn {
-  background: none;
+  @apply  bg-slate-700;
   border: none;
   cursor: pointer;
   line-height: 1.5;
