@@ -674,6 +674,22 @@ video {
   margin-top: 0.75rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .block {
   display: block;
 }
