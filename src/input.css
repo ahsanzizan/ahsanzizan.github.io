@@ -295,7 +295,7 @@ body {
 
 /* Image zoom on hover + Overlay colour */
 .parent {
-    @apply w-full rounded-md h-60 md:h-52;
+    @apply w-full rounded-md h-40 md:h-48;
     margin: 18px;
     border: 1px solid #240090;
     overflow: hidden;

@@ -1551,14 +1551,14 @@ body {
 /* Image zoom on hover + Overlay colour */
 
 .parent {
-  height: 15rem;
+  height: 10rem;
   width: 100%;
   border-radius: 0.375rem;
 }
 
 @media (min-width: 768px) {
   .parent {
-    height: 13rem;
+    height: 12rem;
   }
 }
 
