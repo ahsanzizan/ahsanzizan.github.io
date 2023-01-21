@@ -282,3 +282,76 @@ body {
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
+
+/* Global Styling */
+.wrapper {
+    padding: 50px 50px;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+}
+
+/* Image zoom on hover + Overlay colour */
+.parent {
+    @apply w-full rounded-md h-60 md:h-52;
+    margin: 18px;
+    border: 1px solid #240090;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.child a {
+  @apply underline md:text-xl sm:text-sm text-center m-auto absolute cursor-pointer top-0 bottom-0 right-0 left-0 h-14 hidden font-semibold text-white;
+}
+
+/* Several different images */
+.bg-one {background-image: url('../dist/img/portfolio/2.png');}
+.bg-two {background-image: url('../dist/img/portfolio/3.png');}
+.bg-three {background-image: url('../dist/img/portfolio/6.png');}
+.bg-four {background-image: url('../dist/img/portfolio/7.png');}
+.bg-five {background-image: url('../dist/img/portfolio/8.png');}
+
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(20, 27, 33, 0.75);
+}
+
+
+.hello {display: none}
