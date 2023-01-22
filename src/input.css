@@ -316,7 +316,7 @@ body {
 }
 
 .child a {
-  @apply underline md:text-xl sm:text-sm text-center m-auto absolute cursor-pointer top-0 bottom-0 right-0 left-0 h-14 hidden font-semibold text-white;
+  @apply underline md:text-xl sm:text-sm text-center m-auto absolute cursor-pointer top-0 bottom-0 right-0 left-0 h-10 hidden font-semibold text-white;
 }
 
 /* Several different images */
