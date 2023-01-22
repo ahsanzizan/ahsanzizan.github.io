@@ -295,11 +295,12 @@ body {
 
 /* Image zoom on hover + Overlay colour */
 .parent {
-    @apply w-full rounded-md h-40 md:h-48;
-    margin: 18px;
-    border: 1px solid #240090;
+    @apply w-full rounded-md h-40 lg:h-60;
+    margin: 20px;
+    border: 3px solid #240090;
     overflow: hidden;
     position: relative;
+    display: block;
     display: inline-block;
 }
 
