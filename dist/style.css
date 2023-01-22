@@ -1593,7 +1593,6 @@ body {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {
