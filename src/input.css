@@ -451,6 +451,7 @@ body {
   background-color: white;
   position: relative;
   border-radius: 6px;
+  @apply hover:scale-110 transition duration-300 ease-in-out;
 }
 
 .content h2 {
@@ -485,7 +486,7 @@ body {
 
 /* Make sure all circles are at the same spot */
   .left::after, .right::after {
-    left: 15px;
+    left: 19px;
   }
 
 /* Make all right containers behave like the left ones */
