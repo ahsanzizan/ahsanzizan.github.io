@@ -1788,9 +1788,11 @@ body {
 }
 
 .gallery {
+  align-items: center;
+  justify-content: center;
   display: grid;
   width: 90%;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, .5fr);
   grid-gap: 10px;
 }
 
