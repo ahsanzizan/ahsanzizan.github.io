@@ -2,7 +2,7 @@ var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
+    this.period = parseInt(period, 10) || 1000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -51,6 +51,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000; animation: blink-caret .5s step-end infinite; } @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: black}}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000; }";
     document.body.appendChild(css);
 };
