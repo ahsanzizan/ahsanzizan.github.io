@@ -11,6 +11,8 @@
 <body class="bg-slate-100">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2928d3d5a7.js" crossorigin="anonymous"></script>
+    <!-- Typing animation -->
+    <script src="./dist/js/typing-effect.js"></script>
     
     <!-- Navbar -->
     <header class="bg-white fixed top-0 left-0 w-full flex items-center z-10">
@@ -64,10 +66,12 @@
                             </span>
                         </span>
                     </h1>
-                    <h2 class="typewriter max-w-[15.4rem] text-base mb-8 leading-relaxed opacity-80"><span class="text-sec">
-                        Student |
-                    </span> Programmer | Developer</h2>
-                    
+                    <!-- <h2 class="max-w-[15.4rem] text-base mb-8 leading-relaxed opacity-80 typewrite" data-period="2000" data-type="['A Student', 'A Programmer', 'A Developer']"><span class="wrap"></span></h2> -->
+                    <h1 class="max-w-[15.4rem] text-base md:text-lg mb-8 leading-relaxed text-sec text-justify">
+                        I'm Ahsan, 
+                        <span class="typewrite text-black" data-period="500" data-type='[ "a Student", "a Programmer", "a Developer" ]'><span class="wrapper"></span></span>
+                    </h1>
+                      
                     <p class="font-medium mb-10 leading-relaxed text-xl max-w-md">
                         Currently a student at SMK Telkom Malang, majoring in Software Engineering.
                     </p>
@@ -145,7 +149,7 @@
 
                 <div class="w-full px-7 lg:w-1/2 mb-7 text-left md:text-center">
                     <h3 class="font-bold text-sec text-3xl mb-10 lg:pt-10">
-                        Education
+                        Educational background
                     </h3>
 
                     <div class="timeline">

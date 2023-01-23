@@ -133,28 +133,6 @@ body {
   }
 }
 
-/* Typing animation */
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  animation: 
-    typing 2.5s steps(45, end),
-    blink-caret .4s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
-}
-
 .card {
   @apply bg-slate-800 flex flex-col items-center shadow-md text-white max-w-xl mx-auto rounded-none;
 }
@@ -451,7 +429,7 @@ body {
   background-color: white;
   position: relative;
   border-radius: 6px;
-  @apply hover:scale-110 transition duration-300 ease-in-out;
+  @apply hover:shadow-xl transition duration-300 ease-in-out;
 }
 
 .content h2 {
