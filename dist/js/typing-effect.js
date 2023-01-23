@@ -51,6 +51,6 @@ window.onload = function() {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000}";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #000; animation: blink-caret .5s step-end infinite; } @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: black}}";
     document.body.appendChild(css);
 };
