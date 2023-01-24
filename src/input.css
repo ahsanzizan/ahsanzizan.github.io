@@ -429,7 +429,7 @@ body {
   background-color: white;
   position: relative;
   border-radius: 6px;
-  @apply hover:shadow-xl transition duration-300 ease-in-out;
+  @apply shadow-xl transition duration-300 ease-in-out;
 }
 
 .content h2 {
