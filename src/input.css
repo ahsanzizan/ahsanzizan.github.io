@@ -11,8 +11,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-a:focus {
-  outline: thin dotted;
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger-line {
