@@ -11,6 +11,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a:focus {
+  outline: thin dotted;
+}
+
 .hamburger-line {
     @apply w-[30px] h-[2px] my-2 block bg-black;
 }
