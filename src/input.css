@@ -402,7 +402,7 @@ a {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent black;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -416,7 +416,7 @@ a {
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent black transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -460,7 +460,7 @@ a {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent black transparent transparent;
   }
 
 /* Make sure all circles are at the same spot */
