@@ -690,14 +690,6 @@ video {
   display: none;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1906,18 +1898,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  .md\:h-60 {
-    height: 15rem;
-  }
-
-  .md\:h-32 {
-    height: 8rem;
-  }
-
-  .md\:h-44 {
-    height: 11rem;
-  }
-
   .md\:h-56 {
     height: 14rem;
   }
@@ -1928,6 +1908,10 @@ a {
 
   .md\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-center {
