@@ -458,7 +458,7 @@ a {
   background-color: white;
   position: relative;
   border-radius: 6px;
-  @apply shadow-xl transition duration-300 ease-in-out;
+  @apply border shadow-xl transition duration-300 ease-in-out;
 }
 
 .content h2 {
