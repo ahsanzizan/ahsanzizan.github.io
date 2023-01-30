@@ -15,10 +15,31 @@ function reveal() {
   }
 }
 
+window.onscroll = function() {
+  const header = document.querySelector('header')
+  const fixedNav = header.offsetTop
+  const toTop = document.querySelector('#back-top')
+
+  if (window.pageYOffset > fixedNav) {
+    toTop.classList.remove('hidden')
+    toTop.classList.add('flex')
+  } else {
+    toTop.classList.remove('flex')
+    toTop.classList.add('hidden')
+  }
+}
+
 window.addEventListener("scroll", reveal);
 
 
 hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active')
     navMenu.classList.toggle('hidden')
+})
+
+window.addEventListener('click', function (e) {
+  if (e.target != navMenu && e.target != hamburger) {
+    hamburger.classList.remove('hamburger-active')
+    navMenu.classList.add('hidden')
+  }
 })

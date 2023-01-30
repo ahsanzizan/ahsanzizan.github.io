@@ -579,8 +579,32 @@ video {
   top: 100%;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
 }
 
 .mx-auto {
@@ -690,8 +714,16 @@ video {
   display: none;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .max-w-\[250px\] {
@@ -827,6 +859,10 @@ video {
 
 .fill-current {
   fill: currentColor;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-12 {
@@ -1908,6 +1944,10 @@ a {
   background-color: rgb(36 0 144 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -1960,11 +2000,6 @@ a {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
