@@ -115,6 +115,10 @@ a {
   @apply mb-12 p-4 md:w-1/2 text-center md:text-left;
 }
 
+.project a {
+  @apply text-sm font-bold text-sec hover:text-black transition duration-300 ease-in-out;
+}
+
 .project a i {
   animation: arrow 1s ease-in-out infinite;
 }
