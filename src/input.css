@@ -21,7 +21,7 @@ a {
 }
 
 .hamburger-line {
-    @apply w-[30px] h-[2px] my-2 block bg-black;
+    @apply w-[30px] h-[2px] my-2 block bg-black dark:bg-white;
 }
 
 /* Direct descendant (Line 1) / first line */
@@ -46,11 +46,11 @@ a {
 }
 
 .navbar-comp {
-    @apply text-base py-2 px-4 mx-3 flex hover:text-sec transition duration-150 ease-in-out mb-3;
+    @apply text-base py-2 px-4 mx-3 flex hover:text-sec dark:hover:text-light transition duration-150 ease-in-out mb-3;
 }
 
 .social-media {
-    @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center transition duration-200 ease-in-out hover:bg-sec hover:text-white;
+    @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center transition duration-200 ease-in-out hover:bg-sec hover:text-white dark:hover:bg-light;
 }
 
 .tool {
@@ -76,11 +76,11 @@ a {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    @apply bg-sec;
     height: 2px;
     bottom: 0;
     left: 0;
     background-color: black;
+    @apply dark:bg-white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -116,7 +116,7 @@ a {
 }
 
 .project a {
-  @apply text-sm font-bold text-sec hover:text-black transition duration-300 ease-in-out;
+  @apply text-sm font-bold text-sec hover:text-black dark:text-light dark:hover:text-white transition duration-300 ease-in-out;
 }
 
 .project a i {
@@ -381,6 +381,7 @@ a {
   position: absolute;
   width: 6px;
   background-color: black;
+  @apply bg-black dark:bg-white;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -403,7 +404,7 @@ a {
   height: 25px;
   right: -12px;
   background-color: #3800df;
-  border: 4px solid #3800df;
+  @apply dark:bg-light border-[4px] border-solid dark:border-light border-sec;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -455,10 +456,9 @@ a {
 /* The actual content */
 .content {
   padding: 30px 30px;
-  background-color: white;
   position: relative;
   border-radius: 6px;
-  @apply border shadow-xl transition duration-300 ease-in-out;
+  @apply border shadow-xl dark:border-slate-800 transition duration-300 dark:bg-slate-800 ease-in-out;
 }
 
 .content h2 {
@@ -467,7 +467,7 @@ a {
 
 
 .content a {
-  @apply hover:text-sec transition duration-300 ease-in-out;
+  @apply hover:text-sec dark:hover:text-light transition duration-300 ease-in-out;
 }
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -548,14 +548,14 @@ a {
 }
 
 .modal {
-  @apply w-[100%] h-[100%] lg:w-full lg:h-full;
+  @apply w-full h-full;
   position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.733);
-  margin-top: -1px;
+  margin-top: 40px;
   animation: zoom 0.3s ease-in-out;
 }
 
@@ -584,4 +584,8 @@ a {
 
 .closeBtn:hover {
   color: rgb(255, 255, 255);
+}
+
+#toggle-mode:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
 }
