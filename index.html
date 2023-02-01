@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="dist/style.css">
     <link rel="icon" href="dist/img/logo.ico" type="image/x-icon">
     <script>
-        if (localStorage.theme === 'dark' || (!'theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
         } else {
             document.documentElement.classList.remove('dark')
@@ -362,7 +362,7 @@
     <!-- /Footer -->
 
     <!-- Back to top -->
-    <a href="#home" id="back-top" class="hidden h-12 w-12 bg-sec dark:bg-light dark:hover:text-white fixed z-[9999] bottom-8 right-8 rounded-full p-4 text-white justify-center items-center hover:bg-opacity-80 hover:text-black transition duration-200 ease-in-out"><i class="fa-solid fa-chevron-up"></i></a>
+    <a href="#home" id="back-top" class="hidden h-12 w-12 bg-sec dark:bg-light fixed z-[9999] dark:hover:bg-opacity-80 bottom-8 right-8 rounded-full p-4 text-white justify-center items-center hover:bg-opacity-80 transition duration-200 ease-in-out"><i class="fa-solid fa-chevron-up"></i></a>
     <!-- /Back to top -->
 
     <!-- Main JS -->

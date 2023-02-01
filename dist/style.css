@@ -2033,6 +2033,10 @@ a {
   --tw-bg-opacity: 0.8;
 }
 
+.hover\:bg-opacity-20:hover {
+  --tw-bg-opacity: 0.2;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -2090,6 +2094,10 @@ a {
 .dark .dark\:hover\:bg-light:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:hover\:bg-opacity-80:hover {
+  --tw-bg-opacity: 0.8;
 }
 
 .dark .dark\:hover\:text-white:hover {

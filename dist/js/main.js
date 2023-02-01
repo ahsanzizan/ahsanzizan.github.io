@@ -48,5 +48,17 @@ const toggle = document.querySelector('#toggle-mode')
 const html = document.querySelector('html')
 
 toggle.addEventListener('click', function() {
-  toggle.checked ? html.classList.add('dark') : html.classList.remove('dark')
+  if (toggle.checked) {
+    html.classList.add('dark')
+    localStorage.theme = 'dark'
+  } else {
+    html.classList.remove('dark')
+    localStorage.theme = 'light'
+  }
 })
+
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  toggle.checked = true
+} else {
+  toggle.checked = false
+}
