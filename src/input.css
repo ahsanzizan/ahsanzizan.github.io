@@ -90,6 +90,15 @@ a {
     transform-origin: bottom left;
 }
 
+.about {
+  @apply text-base font-semibold rounded-tr-lg rounded-bl-lg
+  bg-transparent text-white hover:opacity-75 transition duration-300 ease-in-out px-5 py-3 bg-sec dark:bg-light;
+}
+
+.about i {
+  animation: arrow 1s ease-in-out infinite;
+}
+
 .reveal {
     position: relative;
     opacity: 0;
