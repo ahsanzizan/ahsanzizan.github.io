@@ -431,7 +431,7 @@ a {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent black;
+  border-color: transparent transparent transparent #64748b;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -445,7 +445,7 @@ a {
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent black transparent transparent;
+  border-color: transparent #64748b transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */

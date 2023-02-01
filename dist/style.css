@@ -626,6 +626,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -644,10 +648,6 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .mt-28 {
@@ -1802,7 +1802,7 @@ a {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent black;
+  border-color: transparent transparent transparent #64748b;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -1817,7 +1817,7 @@ a {
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent black transparent transparent;
+  border-color: transparent #64748b transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -2105,10 +2105,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2141,16 +2137,16 @@ a {
     right: 0px;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:mt-8 {
     margin-top: 2rem;
   }
 
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:mt-0 {
-    margin-top: 0px;
   }
 
   .lg\:block {
