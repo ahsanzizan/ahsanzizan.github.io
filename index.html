@@ -24,7 +24,7 @@
     <!-- <script src="./dist/js/modal.js"></script> -->
     
     <!-- Navbar -->
-    <header class="bg-white dark:bg-slate-800 dark:text-white fixed top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-white dark:bg-slate-800 dark:text-gray-400 fixed top-0 left-0 w-full flex items-center z-[9999]">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
@@ -59,7 +59,7 @@
                             
                             <li class="flex items-center mb-3 pl-4 mt-5 lg:mt-0">
                                <div class="flex">
-                                <span class="mr-2 text-sm dark:text-white font-semibold">Light</span>
+                                <span class="mr-2 text-sm dark:text-gray-400 font-semibold">Light</span>
                                 <input type="checkbox" name="toggle-mode" id="toggle-mode" class="hidden">
                                 <label for="toggle-mode">
                                     <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
@@ -67,7 +67,7 @@
                                         </div>
                                     </div>
                                 </label>
-                                <span class="ml-2 text-sm dark:text-white font-semibold">Dark</span>
+                                <span class="ml-2 text-sm dark:text-gray-400 font-semibold">Dark</span>
                                </div>  
                             </li>
                         </ul>
@@ -89,12 +89,12 @@
                         </span>
                     </h1>
                     <!-- <h2 class="max-w-[15.4rem] text-base mb-8 leading-relaxed opacity-80 typewrite" data-period="2000" data-type="['A Student', 'A Programmer', 'A Developer']"><span class="wrap"></span></h2> -->
-                    <h1 class="text-base md:text-lg mb-8 leading-relaxed">
+                    <h1 class="text-base md:text-lg mb-8 leading-relaxed dark:text-gray-400">
                         I'm a
                         <span class="typewrite text-sec dark:text-light" data-period="1000" data-type='[ "Student", "Programmer", "Developer" ]'><span class="wrapper"></span></span>
                     </h1>
                       
-                    <p class="font-medium mb-10 leading-relaxed text-xl max-w-md">
+                    <p class="font-thin dark:text-gray-300 mb-10 leading-relaxed text-xl max-w-md">
                         A student at SMK Telkom Malang majoring in software engineering.
                     </p>
                     <a href="#portfolio" class="about">
@@ -102,9 +102,9 @@
                     </a>
                 </div> 
                 
-                <div class="w-full self-end px-4 lg:w-1/2 mt-5">
-                    <div class="relative mt-28 lg:mt-8 lg:right-0">
-                        <img src="dist/img/photo.jpg" alt="Photo" class="max-w-full mx-auto rounded-full bg-blend-lighten rotate-6 border-2 border-black dark:border-white" width="300" height="300">
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative lg:mt-0 mt-28 lg:right-0">
+                        <img src="dist/img/photo.jpg" alt="Photo" class="mx-auto bg-blend-lighten dark:bg-blend-darken rounded-full dark:border-white" width="400" height="400">
                     </div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
                     <h2 class="font-bold text-3xl mb-3 max-w-md">
                         Hello there!
                     </h2>
-                    <p class="font-medium leading-relaxed text-lg lg:text-md mb-6">
+                    <p class="font-medium leading-relaxed text-lg lg:text-md mb-6 dark:text-gray-300">
                         I'm Ahsan Azizan, a self-taught Programmer / Developer. My background is a Unity game developer. I'm currently learning about web / app development. My goal is to contribute to the advancement of technology especially software related technology.    
                     </p>
 
@@ -141,7 +141,7 @@
                     <h3 class="font-bold text-3xl mb-2 lg:pt-10">
                         Let's connect!
                     </h3>
-                    <p class="font-medium leading-relaxed text-lg mb-6 lg:text-md">
+                    <p class="font-medium leading-relaxed text-lg mb-6 lg:text-md dark:text-gray-300">
                         A Wise-Man once said "Don't Know thus Don't Like". If you want to connect with me on social media or maybe just want to know more, here's all my social media accounts. I got Instagram, Twitter, Discord, and LinkedIn. You can follow or Message me there.
                     </p>
             
@@ -164,42 +164,74 @@
                     </div>
                 </div>
 
-                <div class="w-full px-7 lg:w-1/2 mb-7">
+                <div class="w-full px-7 mb-7">
                     <h3 class="font-bold text-3xl mb-16 lg:pt-10 text-left md:text-center">
                         Educational background
                     </h3>
-                    <div class="timeline text-left md:text-center">
-                        <div class="timeline-container left">
-                          <div class="content">
-                            <h2>2013</h2>
-                            <a href="https://siln-riyadh.kemdikbud.go.id/">SILN Riyadh</a>
-                          </div>
-                        </div>
-                        <div class="timeline-container right">
-                            <div class="content">
-                              <h2>2016</h2>
-                              <a href="https://www.instagram.com/siln.bangkok/?hl=en">SILN Bangkok</a>
+                    
+                    
+                    <ol class="items-center sm:flex justify-center">
+                        <li class="relative mb-6 sm:mb-0">
+                            <div class="flex items-center">
+                                <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                    <svg aria-hidden="true" class="w-3 h-3 text-sec dark:text-light" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                             </div>
-                          </div>
-                        <div class="timeline-container left">
-                          <div class="content">
-                            <h2>2017</h2>
-                            <a href="https://dapo.kemdikbud.go.id/sekolah/86595935C68921766E11">SDN Bintaro 13 Pagi</a>
-                          </div>
-                        </div>
-                        <div class="timeline-container right">
-                            <div class="content">
-                              <h2>2019</h2>
-                              <a href="https://mtsnegeri3jakarta.sch.id/">MTsN 3 Jakarta</a>
+                            <div class="mt-3 sm:pr-8">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SLIN Riyadh</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Moved on 2017</time>
                             </div>
-                        </div>
-                        <div class="timeline-container left">
-                            <div class="content">
-                              <h2>2022</h2>
-                              <a href="https://smktelkom-mlg.sch.id/">SMK Telkom Malang</a>
+                        </li>
+                        <li class="relative mb-6 sm:mb-0">
+                            <div class="flex items-center">
+                                <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                    <svg aria-hidden="true" class="w-3 h-3 text-sec dark:text-light" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="mt-3 sm:pr-8">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SLIN Bangkok</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Moved on 2018</time>
+                            </div>
+                        </li>
+                        <li class="relative mb-6 sm:mb-0">
+                            <div class="flex items-center">
+                                <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                    <svg aria-hidden="true" class="w-3 h-3 text-sec dark:text-light" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                            </div>
+                            <div class="mt-3 sm:pr-8">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SDN Bintaro 12</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Graduated on 2019</time>
+                            </div>
+                        </li>
+                        <li class="relative mb-6 sm:mb-0">
+                            <div class="flex items-center">
+                                <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                    <svg aria-hidden="true" class="w-3 h-3 text-sec dark:text-light" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                            </div>
+                            <div class="mt-3 sm:pr-8">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">MTsN 3 Jakarta</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Graduated on 2022</time>
+                            </div>
+                        </li>
+                        <li class="relative mb-6 sm:mb-0">
+                            <div class="flex items-center">
+                                <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                                    <svg aria-hidden="true" class="w-3 h-3 text-sec dark:text-light" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div class="sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                            </div>
+                            <div class="mt-3 sm:pr-8">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">SMK Telkom Malang</h3>
+                                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Expected Graduation: 2025</time>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -214,7 +246,7 @@
                     <h2 class="font-bold text-white text-3xl mb-4">
                         Collaborate with me
                     </h2>
-                    <p class="font-medium text-md text-white">
+                    <p class="font-medium text-md text--">
                         If you're looking to collaborate with me, you can contact me at my email: ahsanaz461@gmail.com or message me at <a href="https://wa.link/l08bpv" class="underline underline-offset-4">WhatsApp</a>. I look forward to a collaboration project 
                 </div>
             </div>
