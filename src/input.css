@@ -311,18 +311,6 @@ a {
   transition-delay: 0s, 0.25s, 0s;
 }
 
-.btn {
-  @apply  bg-slate-700;
-  border: none;
-  cursor: pointer;
-  line-height: 1.5;
-  font: 600 1.2rem 'Roboto Slab', sans-serif;
-  padding: 1em 2em;
-  @apply px-7 py-4 mb-5 text-center hover:bg-sec;
-  letter-spacing: 0.05rem;
-  width: 20rem;
-}
-
 
 .social-icons {
   padding: 0;
