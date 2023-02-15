@@ -50,7 +50,7 @@ a {
 }
 
 .social-media {
-    @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center transition duration-200 ease-in-out hover:bg-sec hover:text-white dark:hover:bg-sec dark:hover:text-light;
+    @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center transition duration-200 ease-in-out hover:bg-sec hover:text-white dark:hover:bg-light;
 }
 
 .tool {
