@@ -269,6 +269,10 @@ img {
   border-radius: .5rem;
 }
 
+.para__link {
+  color: var(--first-color);
+}
+
 /*  SKILLS */
 .skills__container {
   row-gap: 2rem;
