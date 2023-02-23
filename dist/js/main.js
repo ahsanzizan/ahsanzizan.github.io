@@ -1,64 +1,51 @@
-const hamburger = document.querySelector('#hamburger')
-const navMenu = document.querySelector('#nav-menu')
+  const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
 
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal")
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight
-    var elementTop = reveals[i].getBoundingClientRect().top
-    var elementVisible = 150
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active")
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show')
+        })
     }
   }
-}
+  showMenu('nav-toggle','nav-menu')
 
-window.onscroll = function() {
-  const header = document.querySelector('header')
-  const fixedNav = header.offsetTop
-  const toTop = document.querySelector('#back-top')
+  const navLink = document.querySelectorAll('.nav__link')
 
-  if (window.pageYOffset > fixedNav) {
-    toTop.classList.remove('hidden')
-    toTop.classList.add('flex')
-  } else {
-    toTop.classList.remove('flex')
-    toTop.classList.add('hidden')
+  function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show')
   }
-}
+  navLink.forEach(n => n.addEventListener('click', linkAction))
 
-window.addEventListener("scroll", reveal);
+  const sections = document.querySelectorAll('section[id]')
 
+  function scrollActive(){
+    const scrollY = window.pageYOffset
 
-hamburger.addEventListener('click', function() {
-    hamburger.classList.toggle('hamburger-active')
-    navMenu.classList.toggle('hidden')
-})
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
 
-window.addEventListener('click', function (e) {
-  if (e.target !== navMenu && e.target !== hamburger) {
-    hamburger.classList.remove('hamburger-active')
-    navMenu.classList.add('hidden')
-  }
-})
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
+        }
+      })
+    }
+    window.addEventListener('scroll', scrollActive)
 
-const toggle = document.querySelector('#toggle-mode')
-const html = document.querySelector('html')
+    /* reveal animation */
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '60px',
+      duration: 2000,
+      delay: 200,
+    });
 
-toggle.addEventListener('click', function() {
-  if (toggle.checked) {
-    html.classList.add('dark')
-    localStorage.theme = 'dark'
-  } else {
-    html.classList.remove('dark')
-    localStorage.theme = 'light'
-  }
-})
-
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  toggle.checked = true
-} else {
-  toggle.checked = false
-}
+    sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
+    sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 200}); 
+    sr.reveal('.home__social-icon',{ interval: 200}); 
+    sr.reveal('.skills__data, .project__img, .contact__input',{interval: 200}); 
