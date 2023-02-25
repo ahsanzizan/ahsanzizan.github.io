@@ -269,9 +269,31 @@ img {
 
 .about__text {
   text-align: justify;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-6);
   margin-right: auto;
   margin-left: auto;
+}
+
+.school__container {
+  row-gap: 2rem;
+  margin-bottom: 10rem;
+}
+
+.school__img {
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
+.school__img img {
+  transition: 1s;
+  width: 100%;
+  height: 34vh;
+  object-fit: cover;
+}
+
+.school__img img:hover {
+  transform: scale(1.2);
 }
 
 /*  Projects */
@@ -377,6 +399,11 @@ img {
     width: 300px;
     bottom: 25%;
   }
+  .school__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
   .project__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -430,6 +457,10 @@ img {
   .home__img {
     width: 400px;
     bottom: 10%;
+  }
+  .school__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
   }
   .project__container {
     grid-template-columns: repeat(3, 1fr);
