@@ -274,6 +274,7 @@ img {
 
 .about__text {
   text-align: justify;
+  text-justify: inter-word;
   margin-bottom: var(--mb-6);
   margin-right: auto;
   margin-left: auto;
