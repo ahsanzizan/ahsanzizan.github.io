@@ -45,6 +45,6 @@ showMenu('nav-toggle','nav-menu')
     });
 
     sr.reveal('.home__data, .about__subtitle, .about__text',{}); 
-    sr.reveal('.home__img',{delay: 200}); 
+    sr.reveal('.home__img, .about__img',{delay: 200}); 
     sr.reveal('.home__social-icon',{ interval: 200}); 
     sr.reveal('.project__img, .school__img',{interval: 200}); 

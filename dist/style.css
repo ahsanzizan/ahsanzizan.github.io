@@ -253,31 +253,30 @@ img {
 }
 
 /* ABOUT */
-.about {
+.about__container {
+  row-gap: 2rem;
+  text-align: center;
   margin-bottom: 10rem;
 }
 
-.para__link {
-  color: var(--first-color);
-}
-
-.about__container {
-  text-align: center;
-  row-gap: 2rem;
-  text-align: center;
-}
-
 .about__subtitle {
-  text-align: center;
   margin-bottom: var(--mb-2);
 }
 
-.about__text {
-  text-align: justify;
-  text-justify: inter-word;
-  margin-bottom: var(--mb-6);
-  margin-right: auto;
-  margin-left: auto;
+.about__img {
+  justify-self: center;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.about__img img {
+  width: 200px;
+  transition: scale 1s;
+  background-color: var(--second-color);
+}
+
+.about__img img:hover {
+  scale: 120%;
 }
 
 .school__container {
@@ -382,6 +381,11 @@ img {
   .home {
     row-gap: 2rem;
   }
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
   .home__img {
     width: 200px;
   }
@@ -438,6 +442,12 @@ img {
   .section-title::after {
     width: 80px;
     top: 3rem;
+  }
+  .about__container {
+    padding-top: 2rem;
+  }
+  .about__img img {
+    width: 200px;
   }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
