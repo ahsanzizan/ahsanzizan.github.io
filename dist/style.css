@@ -255,13 +255,13 @@ img {
 .btn {
   display: inline-block;
   background-color: var(--first-color);
-  border: var(--first-color) 3px solid;
+  border: var(--first-color) 1.5px solid;
   border-radius: 100%;
   color: white;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
-  transition: .3s;
+  transition: .2s;
 }
 
 .btn:hover {
