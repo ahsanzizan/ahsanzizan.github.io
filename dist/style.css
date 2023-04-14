@@ -19,6 +19,10 @@
   --z-fixed: 9999;
 }
 
+* {
+  -webkit-tap-color-highlight-color: transparent;
+} 
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
